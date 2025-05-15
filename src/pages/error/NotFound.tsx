@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { primaryColor } from '../../componets/util/constants';
 import { FaHome, FaExclamationTriangle } from 'react-icons/fa';
 import Container from '../../componets/shared/container';
 

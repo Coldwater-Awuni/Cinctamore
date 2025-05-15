@@ -29,13 +29,13 @@ const DigitalFabrication = () => {
     'Fibre-reinforced plastics'
   ];
 
-  const projects = [
-    { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img1.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img2.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img3.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img4.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img5.jpg' }
-  ];
+  // const projects = [
+  //   { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img1.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img2.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img3.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img4.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/Digi_Fabrication/project_1/project-1-img5.jpg' }
+  // ];
 
   return (
     <>

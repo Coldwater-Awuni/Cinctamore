@@ -1,17 +1,17 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { FaRuler, FaHardHat, FaCalculator, FaChartLine } from 'react-icons/fa';
+import { FaRuler, FaCalculator } from 'react-icons/fa';
 import SEO from '../../../componets/shared/SEO';
 
 const Architecture = () => {
-  const projects = [
-    { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img1.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img4.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img1.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/architecture/project_4/project-4-img5.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img3.jpg' },
-    { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img4.jpg' },
-  ];
+  // const projects = [
+  //   { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img1.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img4.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img1.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/architecture/project_4/project-4-img5.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img3.jpg' },
+  //   { title: 'Project Title', image: 'assets/img/Project/architecture/project_1/project-1-img4.jpg' },
+  // ];
 
   return (
     <>

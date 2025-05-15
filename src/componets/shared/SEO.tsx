@@ -18,13 +18,13 @@ const SEO = ({
   title = "Cinctamore - A Pattern of Good Works",
   description = "Cinctamore is a global business collaborator and solutions finder, specializing in Architecture, Urban Design, Engineering & Construction, Trading & Investment, and Multimedia.",
   keywords = "architecture, urban design, construction, digital fabrication, Ghana, Africa, design, engineering",
-  image = "/assets/img/cinctamore-logo-1.png",
+  image = "/assets/img/CINCTAMORE_LOGO.png",
   url = "https://cinctamore.com",
   type = "website",
   author = "Cinctamore",
-  publishedTime,
-  modifiedTime,
-  section,
+  publishedTime = "",
+  modifiedTime = "",
+  section = "",
   tags = []
 }: SEOProps) => {
   const siteTitle = title.includes("Cinctamore") ? title : `${title} | Cinctamore`;

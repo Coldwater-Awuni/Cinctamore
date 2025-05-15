@@ -3,16 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Coldwater-Awuni.github.io/cinctamore",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "@types/react-helmet-async": "^1.0.3",
     "framer-motion": "^12.6.2",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -30,6 +33,7 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@types/react-slick": "^0.23.13",
+    "@types/swiper": "^6.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",

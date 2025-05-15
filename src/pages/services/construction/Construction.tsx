@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { FaTools, FaHardHat, FaClipboardCheck, FaCogs } from 'react-icons/fa';
+import { FaTools, FaHardHat, FaCogs } from 'react-icons/fa';
 import SEO from '../../../componets/shared/SEO';
 
 const Construction = () => {

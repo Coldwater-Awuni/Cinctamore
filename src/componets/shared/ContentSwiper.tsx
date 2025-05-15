@@ -36,7 +36,6 @@ const ContentSwiper: React.FC<ContentSwiperProps> = ({
 
   useEffect(() => {
     // Set up GSAP timeline for animations
-    const timeline = gsap.timeline();
 
     // Animate initial slide caption
     animateCaption(0);
