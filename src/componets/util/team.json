@@ -1,0 +1,52 @@
+{
+  "team": [
+    {
+      "name": "Nana Bonsu Adja-Sai",
+      "title": "Chief Executive Officer",
+      "description": "Leads the business in its operations and plan for the future. Overseeing new training programs, product development .",
+      "image": "assets/img/about/about_1.webp",
+      "social": {
+        "facebook": "#",
+        "instagram": "#",
+        "tiktok": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "name": "Dr. Mrs. Claudia Adja-Sai",
+      "title": "Chief Operating Officer", 
+      "description": "Ensures the organization's productivity by building a performance culture within the business. Oversees the implementation of all operational plans .",
+      "image": "assets/img/team/coo.webp",
+      "social": {
+        "facebook": "#",
+        "instagram": "#",
+        "tiktok": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "name": "Samuel Yaw Abagi",
+      "title": "Logistics Manager",
+      "description": "Managing and maintaining an accurate inventory of product storage warehouses · Facilitating business relationships with clients and product suppliers.",
+      "image": "assets/img/team/logistics_manager.webp",
+      "social": {
+        "facebook": "#",
+        "instagram": "#",
+        "tiktok": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "name": "Ruth Twumwaa",
+      "title": "Office Manager",
+      "description": "Coordinats appointments and meetings and manages staff calendars and schedules. Supervising, mentoring, training, and coaching our office staff.",
+      "image": "assets/img/team/office_manager.webp", 
+      "social": {
+        "facebook": "#",
+        "instagram": "#",
+        "tiktok": "#",
+        "twitter": "#"
+      }
+    }
+  ]
+}

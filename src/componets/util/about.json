@@ -1,0 +1,83 @@
+{
+  "pageTitle": "About Cinctamore",
+  "backgroundImages": [
+    "assets/img/slider/homeslider/home1 (2).webp",
+    "assets/img/about/our-history.webp",
+    "assets/img/about/our-values.webp",
+    "assets/img/about/our-history.webp"
+  ],
+  "sections": [
+    {
+      "id": "about",
+      "title": "About Cinctamore",
+      "backgroundImage": "assets/img/about/about-bg.webp",
+      "content": [
+        "Cinctamore was incorporated in 2018 to spearhead the development of multiple family-owned businesses by providing the framework to guide each business to stay competitive and successful.",
+        "Cinctamore is a global business collaborator and solutions finder. We pride ourselves in our ability to connect our clients to solutions unique to their peculiar needs. Truly, at Cinctamore, we are constantly finding solutions to support a better future for all. We do this through our Architecture, Urban Design, Engineering & Construction, Trading & Investment, as well as Multimedia, Lifestyle and Health Groups.",
+        "Cinctamore - a combined word of \"Cincta (surrounded, encircled, crowned, girded, enclosed)\" and \"Amore (love)\" means \"Surrounded by love\".",
+        "Our name reflects our belief that, the greatest of what is possible can only be achieved when what we do as a team is surrounded with of love. In all we do, we strive to be a 'Pattern of Good Work'!"
+      ]
+    },
+    {
+      "id": "our-advantage",
+      "title": "Our Advantage",
+      "backgroundImage": "assets/img/about/our-advantage.webp",
+      "content": [
+        "Cinctamore exists to finds solutions. Our large global network of experts makes us competitive when it comes to finding the right solutions for our clients. Where there is a will, there would always be a way.",
+        "The Future is our advantage."
+      ]
+    },
+    {
+      "id": "our-vision",
+      "title": "Our Vision",
+      "backgroundImage": "assets/img/about/our-vision.webp",
+      "content": [
+        "We strive to keep our pride as Consistent, Reliable and Relentless Global Design Business Collaborator, Solutions Finder and Developer.",
+        "This is enshrined in our Faith to be the global \"Pattern of Good Work\" and our slogan that 'There is always a Way'. All it takes is to pay close attention to details.",
+        "At Cinctamore, the work that we are entrusted with is sacred. Irrespective of the nature and scope of the project at hand, we strive for excellence and to satisfy our clients. We do not take work that we do not love and believe that it would change lives for the better.",
+        "To this end, we collaborate closely with all stakeholders and with the equal attention to detail on each work at hand."
+      ]
+    },
+    {
+      "id": "our-values",
+      "title": "Our Values",
+      "backgroundImage": "assets/img/about/our-values.webp",
+      "subsections": [
+        {
+          "title": "Equity And Opportunity",
+          "content": "At Cinctamore, we know it is our sacred responsibility to work toward what is right and just by providing the framework for equity and opportunity for all."
+        },
+        {
+          "title": "Collaborating",
+          "content": "At Cinctamore, we love collaborating with others because it provides a diverse platform for finding effective solutions to the challenges of our time and the future."
+        },
+        {
+          "title": "Teaching, Research & Development",
+          "content": [
+            "We are privileged to know what we know now because opportunities were presented to us to learn. Therefore, in the same spirit, we at Cinctamore teach what we know; research to discover more knowledge, and to contribute to the larger body of knowledge.",
+            "This is why at Cinctamore, each team member is passionate and relentless when it comes to our quest for solutions in our fields of operation.",
+            "We also deem it a privilege to shape the future by providing the platform for inter-disciplinary Teaching, Research and Development as catalysts for shaping the way(s) we perceive and structure the Future."
+          ]
+        }
+      ]
+    }
+  ],
+  "quickLinks": [
+    {
+      "id": "about",
+      "title": "ABOUT US"
+    },
+    {
+      "id": "our-advantage",
+      "title": "OUR ADVANTAGE"
+    },
+    {
+      "id": "our-vision",
+      "title": "OUR VISION"
+    },
+    {
+      "id": "our-values",
+      "title": "OUR VALUES"
+    }
+  ]
+}

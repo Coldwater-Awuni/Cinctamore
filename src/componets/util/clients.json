@@ -1,0 +1,88 @@
+{
+  "clients": [
+    {
+      "id": "dt",
+      "name": "DT",
+      "logo": "assets/img/clients/dt_logo_external_acronym-vertical.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "bosche",
+      "name": "Bosche",
+      "logo": "assets/img/clients/bosche-logo.webp", 
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "cottodeste",
+      "name": "Cotto d'Este",
+      "logo": "assets/img/clients/cottodeste.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "schlueter",
+      "name": "Schlüter",
+      "logo": "assets/img/clients/logo_schlueter.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "layer0",
+      "name": "Layer0",
+      "logo": "assets/img/clients/Layer0.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "sika",
+      "name": "Sika",
+      "logo": "assets/img/clients/sika-logo2.webp",
+      "alt": "Client Logo 1" 
+    },
+    {
+      "id": "bog",
+      "name": "Bank of Ghana",
+      "logo": "assets/img/clients/Bank-Of-Ghana.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "cbg",
+      "name": "CBG",
+      "logo": "assets/img/clients/CBG logo.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "uom",
+      "name": "University of Michigan",
+      "logo": "assets/img/clients/University-of-Michigan-Logo.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "penetron",
+      "name": "Penetron",
+      "logo": "assets/img/clients/penetron.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "gnat",
+      "name": "GNAT",
+      "logo": "assets/img/clients/GNAT LOGO.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "sepalumic",
+      "name": "Sepalumic",
+      "logo": "assets/img/clients/sepalumic-grand-public-2024.webp",
+      "alt": "Client Logo 1"
+    },
+    {
+      "id": "dibi",
+      "name": "DIBI",
+      "logo": "assets/img/clients/DIBI.webp",
+      "alt": "DIBI Logo 1"
+    },
+    {
+      "id": "fac",
+      "name": "FAC",
+      "logo": "assets/img/clients/FAC1.webp", 
+      "alt": "FCA LOGO"
+    }
+  ]
+}

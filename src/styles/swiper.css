@@ -1,0 +1,70 @@
+.content-swiper {
+  position: relative;
+}
+
+.content-swiper .slick-slide {
+  height: 500px;
+}
+
+.content-swiper .slick-prev,
+.content-swiper .slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.content-swiper .slick-prev {
+  left: 20px;
+}
+
+.content-swiper .slick-next {
+  right: 20px;
+}
+
+.content-swiper .slick-dots {
+  bottom: 20px;
+}
+
+.content-swiper .slick-dots li button:before {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .content-swiper .slick-slide {
+    height: 300px;
+  }
+}
+
+/* Hero section specific styles */
+.hero-section .content-swiper .slick-slide {
+  height: 100vh;
+}
+
+.hero-section .content-swiper .slick-dots {
+  bottom: 40px;
+}
+
+.hero-section .content-swiper .slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+}
+
+.hero-section .content-swiper .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.hero-section .content-swiper .slick-prev,
+.hero-section .content-swiper .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.hero-section .content-swiper .slick-prev {
+  left: 30px;
+}
+
+.hero-section .content-swiper .slick-next {
+  right: 30px;
+}
