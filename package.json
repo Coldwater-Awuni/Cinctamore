@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Coldwater-Awuni.github.io/cinctamore",
+  "homepage": "https://Coldwater-Awuni.github.io/Cinctamore",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
