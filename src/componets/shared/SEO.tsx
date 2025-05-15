@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 
 interface SEOProps {
   title?: string;
@@ -27,64 +27,83 @@ const SEO = ({
   section = "",
   tags = []
 }: SEOProps) => {
-  const siteTitle = title.includes("Cinctamore") ? title : `${title} | Cinctamore`;
+  useEffect(() => {
+    document.title = title.includes("Cinctamore") ? title : `${title} | Cinctamore`;
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": url,
-    "name": siteTitle,
-    "author": {
-      "@type": "Organization",
-      "name": author
-    },
-    "description": description,
-    "image": image
-  };
+    const setMeta = (name: string, content: string) => {
+      let element = document.querySelector(`meta[name='${name}']`) as HTMLMetaElement | null;
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute('name', name);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
+    setMeta('description', description);
+    setMeta('keywords', keywords);
+    setMeta('author', author);
+    setMeta('robots', 'index, follow');
+    setMeta('language', 'English');
+    setMeta('revisit-after', '7 days');
+    setMeta('viewport', 'width=device-width, initial-scale=1.0');
 
-  return (
-    <Helmet>
-      {/* Basic Meta Tags */}
-      <title>{siteTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="author" content={author} />
+    // Open Graph
+    const setOg = (property: string, content: string) => {
+      let element = document.querySelector(`meta[property='${property}']`) as HTMLMetaElement | null;
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute('property', property);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
+    setOg('og:type', type);
+    setOg('og:url', url);
+    setOg('og:title', title);
+    setOg('og:description', description);
+    setOg('og:image', image);
 
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
-      <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+    // Twitter
+    setMeta('twitter:card', 'summary_large_image');
+    setMeta('twitter:url', url);
+    setMeta('twitter:title', title);
+    setMeta('twitter:description', description);
+    setMeta('twitter:image', image);
 
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={url} />
-      <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+    // Article-specific
+    if (publishedTime) setOg('article:published_time', publishedTime);
+    if (modifiedTime) setOg('article:modified_time', modifiedTime);
+    if (section) setOg('article:section', section);
+    if (tags.length > 0) setOg('article:tag', tags.join(', '));
 
-      {/* Additional SEO Tags */}
-      <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
-      <meta name="revisit-after" content="7 days" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    // Canonical
+    let link: HTMLLinkElement | null = document.querySelector("link[rel='canonical']");
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
+    }
+    link.setAttribute('href', url);
 
-      {/* Article-specific Meta Tags */}
-      {publishedTime && <meta property="article:published_time" content={publishedTime} />}
-      {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
-      {section && <meta property="article:section" content={section} />}
-      {tags.length > 0 && <meta property="article:tag" content={tags.join(', ')} />}
+    // Structured Data
+    let script: HTMLScriptElement | null = document.querySelector("script[type='application/ld+json']");
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      url,
+      name: title,
+      author: { "@type": "Organization", name: author },
+      description,
+      image
+    });
+  }, [title, description, keywords, image, url, type, author, publishedTime, modifiedTime, section, tags]);
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={url} />
-
-      {/* Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
-    </Helmet>
-  );
+  return null;
 };
 
 export default SEO;

@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/Cinctamore/',
+  // base: '/Cinctamore/',
   plugins: [react(), tailwindcss()],
-  build: {
-    outDir: 'dist',
-    sourcemap: true
-  }
+  // build: {
+  //   outDir: 'dist',
+  //   sourcemap: true,
+  //   assetsDir: 'assets'
+  // }
 })
