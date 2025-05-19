@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
     {
       id: 1,
       type: 'video' as const,
-      content: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617523/homevideo_wzwhhq.mp4',
+      content: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617538/home_ulvatu.mp4',
       isUrl: true,
       captionClassName: 'absolute bottom-[-25%] left-[20%] transform -translate-x-1/2  backdrop-blur-[8px]mb-4 animate-fadeIn',
       caption: (
