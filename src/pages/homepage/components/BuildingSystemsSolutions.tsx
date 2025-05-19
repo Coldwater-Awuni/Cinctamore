@@ -6,27 +6,27 @@ import { EffectFade, Autoplay } from 'swiper/modules';
 const partners = [
   {
     logo: 'assets/img/clients/logo_schlueter.webp',
-    video: 'assets/video/system-solutions/NEW!_Schluter®_KERDI_SHOWER_Trays!.mp4'
+    video: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617530/NEW__Schluter__KERDI_SHOWER_Trays_ghzhjc.mp4'
   },
   {
     logo: 'assets/img/clients/cottodeste.webp',
-    video: 'assets/video/system-solutions/cottodeste_Advantage_Skin.mp4'
+    video: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617531/cottodeste_Advantage_Skin_zy1ioz.mp4'
   },
   {
     logo: 'assets/img/clients/DIBI.webp',
-    video: 'assets/video/system-solutions/Showroom_aziendale_Di.Bi._Porte Blindate_srl.mp4'
+    video: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617533/Showroom_aziendale_Di.Bi._Porte_Blindate_srl_lwme0l.mp4'
   },
   {
     logo: 'assets/img/clients/penetron.webp',
-    video: 'assets/video/system-solutions/The_Penetron_System.mp4'
+    video: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617546/The_Penetron_System_trmmkw.mp4'
   },
   {
     logo: 'assets/img/clients/sika-logo2.webp',
-    video: 'assets/video/system-solutions/Sika_Latex_Power waterproofing_application.mp4'
+    video: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617539/Sika_Latex_Power_waterproofing_application_qgxgcs.mp4'
   },
   {
     logo: 'assets/img/clients/sepalumic-grand-public-2024.webp',
-    video: 'assets/video/system-solutions/Sepalumic_Nouvelle_offre_couleurs_2024.mp4'
+    video: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617551/Sepalumic_Nouvelle_offre_couleurs_2024_zf4gdv.mp4'
   }
 ];
 

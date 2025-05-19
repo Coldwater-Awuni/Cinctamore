@@ -7,15 +7,15 @@ const HeroSection: React.FC = () => {
     {
       id: 1,
       type: 'video' as const,
-      content: 'assets/video/homeslider/Cinctamore_Cnc_Cutting_Machine.mp4',
-      isUrl: false,
-      captionClassName: 'absolute bottom-[25%] left-1/2 transform -translate-x-1/2  backdrop-blur-[8px]mb-4 animate-fadeIn',
+      content: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617523/homevideo_wzwhhq.mp4',
+      isUrl: true,
+      captionClassName: 'absolute bottom-[-25%] left-[20%] transform -translate-x-1/2  backdrop-blur-[8px]mb-4 animate-fadeIn',
       caption: (
-        <div className="max-w-[90%] md:max-w-[80%]  lg:max-w-[80%]">
+        <div className="max-w-[70%] md:max-w-[80%]  lg:max-w-[60%]">
           <img 
             src={cinctamore_Logo} 
             alt="Cinctamore Logo" 
-            className="w-auto h-auto max-w-[200px] md:max-w-[300px] lg:max-w-[600px] mx-auto"
+            className="w-auto h-auto max-w-[200px] md:max-w-[300px] lg:max-w-[400px] mx-auto"
           />
         </div>
       )
@@ -35,8 +35,8 @@ const HeroSection: React.FC = () => {
     {
       id: 3,
       type: 'image' as const,
-      content: 'https://3d.nice-cdn.com/upload/image/product/large/default/twotrees-ttc450-pro-cnc-milling-machine-1-pc-674710-en.jpg',
-      isUrl: true,
+      content: 'assets/img/slider/homeslider/home4.webp',
+      isUrl: false,
       captionClassName: 'absolute bottom-10 right-10 animate-slideInRight',
       caption: (
         <h2 className="text-2xl md:text-5xl font-bold">

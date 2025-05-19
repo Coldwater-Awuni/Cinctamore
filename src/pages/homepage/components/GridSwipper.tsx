@@ -39,7 +39,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ service, index }) => {
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"]
-  });
+  });   
 
   const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);

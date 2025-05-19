@@ -18,7 +18,8 @@
       "description": "The formation of 'The Community' is one of our greatest assets. The Community provides the platform to investigate and navigate common grounds to promote equity and opportunity. It thus, reflects the best of what is attainable within our commonwealth. At Cinctamore, we work constantly to improve communities to sustain them for better futures.",
       "link": "urban-design",
       "videos": [
-                "assets/img/slider/Urban-Design-slider/Borteyman.mp4"],
+                "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617973/Borteyman_cpiu50.mp4"
+                ],
       "images": [
         "assets/img/slider/Urban-Design-slider/Urban_4.webp",
         "assets/img/slider/Urban-Design-slider/Urban_5.webp"
@@ -29,7 +30,7 @@
       "title": "Engineering and Construction",
       "description": "We do not cut corners. We are committed to helping our clients with the most appropriate construction solutions to their designs. In other words, we help our clients build, repair and avoid problems when it comes to buildings. Through our holistic, honest and careful attention to detail approach to construction, we do what is right to satisfy our clients and to return best value for their investment.",
       "link": "construction",
-      "videos": ["assets/img/slider/construction-slide/BORTEYMAN_WATER_TOWER.mp4"],
+      "videos": ["https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617885/BORTEYMAN_WATER_TOWER_odgw4i.mp4"],
       "images": [
         "assets/img/slider/construction-slide/engineering_construction_5.webp",
         "assets/img/slider/construction-slide/engineering_construction_4.webp",
@@ -45,9 +46,9 @@
         "assets/img/slider/digital-cutting/DIPLOMATIC_TECHNOLOGY_SEAL.webp"
       ],
       "videos": [
-        "assets/video/Cinctamore_Cnc_Cutting.mp4",
-        "assets/img/slider/digital-cutting/Penetron.mp4",
-        "assets/img/slider/digital-cutting/Cinctamore_Robotics.mp4"
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617519/Cinctamore_Cnc_Cutting_ucm99s.mp4",
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617621/Penetron_xpuch5.mp4",
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617619/Cinctamore_Robotics_efnj8w.mp4"
       ]
     },
     {
@@ -55,7 +56,7 @@
       "title": "Branding and High impact Printing Solutions",
       "description": "The best Design Solution goes hand-in-hand with appropriate Engineering Solution. We evaluate and structure our projects thoroughly to ensure that the solutions we offer meet the unique project requirements, goals, and challenges.",
       "link": "print-brand.html",
-      "videos": ["assets/img/slider/Branding-HIPS/CINCTAMORE_PRINT_AND_CUT_4.mp4"],
+      "videos": ["https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747646248/CINCTAMORE_PRINT_AND_CUT_4_ubeyu2.mp4"],
       "images": [
         "assets/img/slider/Branding-HIPS/SIKA_CHEMICALS_3.webp",
         "assets/img/slider/Branding-HIPS/SIKA_CHEMICALS_13.webp",
@@ -68,11 +69,11 @@
       "description": "Ghana has a rich Architectural Heritage. Whichever way that you choose to explore our country through our distinct walking tours, visits to one of the city's old and emerging neighborhoods, secondary school tour (in Accra and beyond) or join our sensational oceanfront boat rides, our expert docents will guide you and share the stories behind the buildings, structure and morphology of our communities.",
       "link": "#contact-us",
       "videos": [
-        "assets/video/architectural-tours/Kenneth-Scott_House.mp4",
-        "assets/video/architectural-tours/Osu-Castle.mp4",
-        "assets/video/architectural-tours/Accra_Skyline.mp4",
-        "assets/video/architectural-tours/Osu-Town.mp4",
-        "assets/video/architectural-tours/Trade_Fair.mp4"
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617550/Kenneth-Scott_House_mauut6.mp4",
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617500/Osu-Castle_fc404r.mp4",
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617528/Accra_Skyline_icv85v.mp4",
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617523/Osu_Town_oz58of.mp4",
+        "https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617498/Trade_Fair_gorchy.mp4"
       ]
     }
   ]
