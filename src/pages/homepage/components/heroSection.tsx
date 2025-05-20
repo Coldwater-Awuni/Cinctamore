@@ -10,26 +10,25 @@ const HeroSection: React.FC = () => {
       type: 'image' as const,
       content: 'assets/img/slider/architectural-slider/UGBS.webp',
       isUrl: false,
-      captionClassName: 'absolute bottom-[-25%] left-[20%] transform -translate-x-1/2  backdrop-blur-[8px]mb-4 animate-fadeIn',
+      captionClassName: 'absolute bottom-4 left-1/2 md:bottom-[-25%] md:left-[20%] transform -translate-x-1/2 mb-4 animate-fadeIn z-20',
       caption: (
-        <div className="max-w-[70%] md:max-w-[80%]  lg:max-w-[60%]">
+        <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[80%] lg:max-w-[60%]">
           <img 
             src={cinctamore_Logo} 
             alt="Cinctamore Logo" 
-            className="w-auto h-auto max-w-[200px] md:max-w-[300px] lg:max-w-[400px] mx-auto"
+            className="w-auto h-auto max-w-[150px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[400px] mx-auto"
           />
         </div>
       )
     },
     {
-
       id: 2,
       type: 'video' as const,
       content: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617538/home_ulvatu.mp4',
       isUrl: true,
-      captionClassName: 'absolute bottom-[-25%] left-[25%] transform -translate-x-1/2  backdrop-blur-[8px]mb-4 animate-fadeIn',
+      captionClassName: 'absolute bottom-4 left-1/2 md:bottom-[-25%] md:left-[25%] transform -translate-x-1/2 mb-4 animate-fadeIn z-20',
       caption: (
-        <h2 className="text-3xl md:text-5xl font-bold">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-left text-white">
           ...there is always a better way...
         </h2>
       )
@@ -39,9 +38,9 @@ const HeroSection: React.FC = () => {
       type: 'image' as const,
       content: 'swippers/Dedesua_8.webp',
       isUrl: false,
-      captionClassName: 'absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 animate-slideInLeft',
+      captionClassName: 'absolute bottom-4 left-1/2 transform -translate-x-1/2 mb-4 animate-slideInLeft z-20',
       caption: (
-        <h2 className="text-3xl md:text-5xl font-bold">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white">
           ...we have time for each project...
         </h2>
       )
@@ -51,9 +50,9 @@ const HeroSection: React.FC = () => {
       type: 'image' as const,
       content: 'assets/img/slider/homeslider/home4.webp',
       isUrl: false,
-      captionClassName: 'absolute bottom-10 right-10 animate-slideInRight',
+      captionClassName: 'absolute bottom-4 right-4 md:bottom-10 md:right-10 animate-slideInRight z-20',
       caption: (
-        <h2 className="text-2xl md:text-5xl font-bold">
+        <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center md:text-right text-white">
           ...pure diligence...
         </h2>
       )
