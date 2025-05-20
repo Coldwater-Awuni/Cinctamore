@@ -21,6 +21,7 @@ interface ContentSwiperProps {
   className?: string;
   showDots?: boolean;
   showArrows?: boolean;
+  delay?: number; // New property to control autoplay delay
 }
 
 const ContentSwiper: React.FC<ContentSwiperProps> = ({
@@ -31,6 +32,7 @@ const ContentSwiper: React.FC<ContentSwiperProps> = ({
   className = '',
   showDots = true,
   showArrows = true,
+  delay = 3000, // Default delay of 3000ms
 }) => {
   const sliderRef = useRef<Slider>(null);
 
@@ -73,6 +75,7 @@ const ContentSwiper: React.FC<ContentSwiperProps> = ({
 
   const settings = {
     autoplay,
+    autoplaySpeed: delay, // Use the delay prop for autoplay speed
     speed,
     infinite,
     dots: showDots,

@@ -1,9 +1,10 @@
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Autoplay, Pagination } from 'swiper/modules'
 import services from '../../../componets/util/services.json'
 import { Link } from 'react-router-dom'
+import { preloadMediaArray } from '../../../componets/util/preloadMedia'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -40,6 +41,22 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ service, index }) => {
     target: sectionRef,
     offset: ["start end", "end start"]
   });   
+
+  useEffect(() => {
+    // Preload all media for this service section
+    const mediaUrls = [
+      ...(service.videos || []),
+      ...(service.images || [])
+    ];
+    
+    preloadMediaArray(mediaUrls)
+      .then(() => {
+        console.log(`All media for service ${service.title} preloaded successfully`);
+      })
+      .catch((error) => {
+        console.warn(`Some media for service ${service.title} failed to preload:`, error);
+      });
+  }, [service]); // Dependency on service to ensure preloading happens when service changes
 
   const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
