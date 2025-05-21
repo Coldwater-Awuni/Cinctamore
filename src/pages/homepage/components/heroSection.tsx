@@ -1,6 +1,14 @@
 import React from 'react';
-import ContentSwiper from '../../../componets/shared/ContentSwiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
 import { cinctamore_Logo } from '../../../assets/assets';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import '../../../styles/swiper-custom.css';
 
 const HeroSection: React.FC = () => {
   const heroSlides = [
@@ -58,17 +66,85 @@ const HeroSection: React.FC = () => {
     }
   ];
 
+  const renderSlideContent = (slide: any) => {
+    const defaultMediaClass = "w-full h-full object-cover absolute inset-0";
+    const defaultCaptionClass = "absolute z-10 text-white w-full h-full flex items-center justify-center";
+    const defaultCaptionInnerClass = "relative p-6 md:p-8 lg:p-10 rounded-lg bg-black/40 backdrop-blur-[8px] transition-all duration-300 ease-in-out slide-caption";
+    
+    if (slide.type === 'image') {
+      return (
+        <div className="relative w-full h-full overflow-hidden">
+          <div className="absolute inset-0">
+            <img 
+              src={slide.isUrl ? slide.content : `/${slide.content}`}
+              alt={typeof slide.caption === 'string' ? slide.caption : 'slide'} 
+              className={`${defaultMediaClass}`}
+              loading="eager"
+            />
+          </div>
+          {slide.caption && (
+            <div className={`${defaultCaptionClass} ${slide.captionClassName || ''}`}>
+              <div className={defaultCaptionInnerClass}>
+                {slide.caption}
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    } else if (slide.type === 'video') {
+      return (
+        <div className="relative w-full h-full overflow-hidden">
+          <div className="absolute inset-0">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className={`${defaultMediaClass}`}
+            >
+              <source src={slide.content} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          {slide.caption && (
+            <div className={`${defaultCaptionClass} ${slide.captionClassName || ''}`}>
+              <div className={defaultCaptionInnerClass}>
+                {slide.caption}
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+  };
+
   return (
     <section className="relative block w-full h-[98vh] md:h-[85vh] lg:h-[98vh] overflow-hidden mb-1">
-      <div className="absolute inset-0 w-full h-full">
-        <ContentSwiper
-          slides={heroSlides}
-          autoplay={true}
-          showDots={true}
-          showArrows={true}
-          className="w-full h-full overflow-hidden object-contain"
-          delay={5500}
-        />
+      <div className="absolute inset-0 w-full h-full">        <Swiper
+          modules={[Autoplay, Pagination, Navigation, EffectFade]}
+          effect="fade"
+          autoplay={{
+            delay: 5500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+            type: 'bullets',
+            bulletClass: 'swiper-pagination-bullet',
+            bulletActiveClass: 'swiper-pagination-bullet-active',
+            verticalClass: 'swiper-pagination-vertical',
+          }}
+          navigation={false}
+          loop={true}
+          speed={1000}
+          className="w-full h-full content-swiper hero-section"
+        >
+          {heroSlides.map((slide) => (
+            <SwiperSlide key={slide.id} className="!h-[98vh]">
+              {renderSlideContent(slide)}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
