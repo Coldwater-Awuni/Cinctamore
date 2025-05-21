@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
     {
       id: 2,
       type: 'video' as const,
-      content: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747617538/home_ulvatu.mp4',
+      content: 'https://res.cloudinary.com/dbsx1wxuc/video/upload/v1747829389/Home_owjxfo.mp4',
       isUrl: true,
       captionClassName: 'absolute bottom-4 left-1/2 md:bottom-[-25%] md:left-[25%] transform -translate-x-1/2 mb-4 animate-fadeIn z-20',
       caption: (
@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
           showDots={true}
           showArrows={true}
           className="w-full h-full overflow-hidden object-contain"
-          delay={6000}
+          delay={5500}
         />
       </div>
     </section>

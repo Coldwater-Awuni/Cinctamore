@@ -131,7 +131,7 @@ const ContentSwiper: React.FC<ContentSwiperProps> = ({
                 src={getMediaSource(slide.content as string, slide.isUrl)} 
                 alt={typeof slide.caption === 'string' ? slide.caption : 'slide'} 
                 className={`${defaultMediaClass} ${slide.mediaClassName || ''}`}
-                loading="lazy"
+                loading="eager"
               />
             </div>
             {slide.caption && (
