@@ -1,8 +1,7 @@
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
-import { preloadMediaArray } from '../../../componets/util/preloadMedia';
 
 const partners = [
   {
@@ -38,18 +37,6 @@ const BuildingSystemsSolutions = () => {
     offset: ["start end", "end start"]
   });
 
-  useEffect(() => {
-    // Preload all partner videos and logos
-    const mediaUrls = partners.flatMap(partner => [partner.video, partner.logo]);
-    
-    preloadMediaArray(mediaUrls)
-      .then(() => {
-        console.log('All partner media preloaded successfully');
-      })
-      .catch((error) => {
-        console.warn('Some partner media failed to preload:', error);
-      });
-  }, []); // Empty dependency array means this runs once when component mounts
 
   const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);

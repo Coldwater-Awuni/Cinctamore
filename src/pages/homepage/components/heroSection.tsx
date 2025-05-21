@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ContentSwiper from '../../../componets/shared/ContentSwiper';
 import { cinctamore_Logo } from '../../../assets/assets';
-import { preloadMediaArray } from '../../../componets/util/preloadMedia';
 
 const HeroSection: React.FC = () => {
   const heroSlides = [
@@ -59,32 +58,12 @@ const HeroSection: React.FC = () => {
     }
   ];
 
-  useEffect(() => {
-    const mediaUrls = heroSlides.map(slide => {
-      // For both URLs and local paths
-      return typeof slide.content === 'string' ? slide.content : '';
-    }).filter(Boolean);
-
-    // Add logo to preload list
-    mediaUrls.push(cinctamore_Logo);
-
-    // Start preloading
-    preloadMediaArray(mediaUrls)
-      .then(() => {
-        console.log('All hero section media preloaded successfully');
-      })
-      .catch((error) => {
-        console.warn('Some hero section media failed to preload:', error);
-      });
-  }, []); // Empty dependency array means this runs once when component mounts
-
   return (
     <section className="relative block w-full h-[98vh] md:h-[85vh] lg:h-[98vh] overflow-hidden mb-1">
       <div className="absolute inset-0 w-full h-full">
         <ContentSwiper
           slides={heroSlides}
           autoplay={true}
-          
           showDots={true}
           showArrows={true}
           className="w-full h-full overflow-hidden object-contain"
